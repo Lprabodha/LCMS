@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LCMS", "layerd_architcure_web\LCMS.csproj", "{F1220F17-5189-4178-BAFB-27B5EBD2CB61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1220F17-5189-4178-BAFB-27B5EBD2CB61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1220F17-5189-4178-BAFB-27B5EBD2CB61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1220F17-5189-4178-BAFB-27B5EBD2CB61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1220F17-5189-4178-BAFB-27B5EBD2CB61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {649102FE-AF17-47F2-8270-7CA7D7953E4D}
+	EndGlobalSection
+EndGlobal
