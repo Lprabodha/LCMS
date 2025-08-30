@@ -22,11 +22,22 @@ namespace LCMS.Repositories
 
         public void CreateCourse(Course request)
         {
-            request.Id = Guid.NewGuid();
-            _context.Add(request);
-            _context.SaveChanges();
-        }
+            try
+            {
+                request.Id = Guid.NewGuid();
+                _context.Add(request);
+                _context.SaveChanges();
 
+            }
+            catch (Exception ex)
+            {
+                // send an email to dev
+                // log to a file Seq  https://datalust.co/ or https://serilog.net/ or https://nlog-project.org/ or ILogger
+                Console.WriteLine($"Unexpected error: { ex.Message}");
+                throw;
+            }
+
+        }
         public Course GetCourseById(Guid id)
         {
             var course = _context.courses
@@ -36,8 +47,18 @@ namespace LCMS.Repositories
 
         public void EditCourse(Course request)
         {
-            _context.Update(request);
-            _context.SaveChanges();
+            try
+            {
+                _context.Update(request);
+                _context.SaveChanges();
+            }catch(Exception ex)
+            {
+                // send an email to dev
+                // log to a file Seq  https://datalust.co/ or https://serilog.net/ or https://nlog-project.org/ or ILogger
+                Console.WriteLine($"Unexpected error: {ex.Message}");
+                throw;
+            }
+
         }
 
         public void DeleteCourse(Course request)
